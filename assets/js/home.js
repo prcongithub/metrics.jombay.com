@@ -12,7 +12,7 @@ $(document).on('ready', function(){
         audioElement.play();
       }
     } else {
-      alert(data.error.message);
+      $("#count").html(data.error.message);
     }
   });
   var interval = setInterval(function(){
