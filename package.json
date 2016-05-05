@@ -21,7 +21,7 @@
     "method-override": "2.3.5",
     "moment": "2.11.2",
     "morgan": "1.6.1",
-    "node-vger": "git+ssh://git@bitbucket.org/jombay/node-vger.git#06723e5fda62e093821f3143d784f22a5d34dba5",
+    "node-vger": "git+ssh://git@bitbucket.org/jombay/node-vger.git#1638c8e87eb2f179a075dabeff980d1c5b8c7401",
     "nodemailer": "0.5.5",
     "qs": "0.6.5",
     "serve-favicon": "2.3.0",
