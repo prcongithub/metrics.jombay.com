@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jombay | IDP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="<%- assetPath('favicon.ico') %>" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <%- css('toolkit.css') %>
+  <%- css('login.css') %>
+
+</head>
+<body>
+  <div class="wrapper">
+    <%- include ../shared/login_header.ejs %>
+    <div class="container user-flow">
+      <%= include ../shared/flash %>
+      <div class="divider2"></div>
+      <div class="span16 left-offset1">
+        <h1 class="page-title">
+          Sign In
+        <div class="divider3"></div>
+        <div class="span12 border-primary first">
+          <form action="/login/" method="POST">
+            <div class="divider2"></div>
+            <div class="span8 margin-auto medium-text">
+              <div class="control-group">
+                <!--[if IE]><label class='ie'>Email ID</label>
+                <input class="lfw" id="user_email" name="user[email]" size="30" type="text" />
+                <div class='clr'></div><![endif]-->
+                <!--[if !IE]><!--><input type="text" size="30" placeholder="Email ID" name="email" id="user_email" class="fw"><!--<![endif]-->
+    
+              </div>
+              <div class="control-group">
+                <!--[if IE]><label class='ie'>Password</label>
+                <input class="lfw" id="user_password" name="user[password]" size="30" type="password" />
+                <div class='clr'></div><![endif]-->
+                <!--[if !IE]><!--><input type="password" size="30" placeholder="Password" name="password" id="user_password" class="fw"><!--<![endif]-->
+              
+              </div>
+              <!-- <div class="control-group">
+                <input type="hidden" value="0" name="user[remember_password]"><input type="checkbox" value="1" name="user[remember_password]" id="user_remember_password" class="pull-left">
+                <label for="user_remember_password" class="gray-dark span">Remember me</label>
+                <div class="clr"></div>
+              </div> -->
+              <div class="divider1"></div>
+              <a title="Forgot Password" href="/forgot_password" class="gray-dark pull-left line-height2">
+                Forgot Password?
+              </a>
+              <input type="submit" value="Login" title="Log In To Jombay!" class="large-text btn btn-warning pull-right">
+              <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+            <div class="divider2"></div>
+          </form>
+
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="span12">
+<!--         <div class="extra-large-text gray-dark line-height2">
+          <span class="gray-dark">
+            Not a user?
+          </span>
+          <a title="Sign Up to Jombay Now" href="/sign_up/">
+            <strong>Sign Up Now</strong>
+          </a>
+        </div> -->
+        <div class="divider2"></div>
+      </div>
+      <div class="clr"></div>
+      <div class="divider3"></div>
+    </div>
+    <div class="divider6"></div>
+    <%- include ../shared/footer.ejs %>
+  </div>
+</body>
+</html>

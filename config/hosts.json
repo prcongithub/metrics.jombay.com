@@ -1,0 +1,18 @@
+{
+  "development": {
+    "host": "idp.jombaylocal.com",
+    "protocol": "http"
+  },
+  "staging_internal": {
+    "host": "idp.internal.ur-nl.com:6080",
+    "protocol": "http"
+  },
+  "staging": {
+    "host": "idp.ur-nl.com",
+    "protocol": "http"
+  },
+  "production": {
+    "host": "idp.jombay.com",
+    "protocol": "http"
+  }
+}

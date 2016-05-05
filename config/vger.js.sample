@@ -1,0 +1,16 @@
+module.exports.api = {
+  protocol: "http",
+  host: "api.ur-nl.com",
+  port: "",
+  app_id: "992c2b4af4701ef4fafaf4aff96dfcf4f4fc2b97be8d8357792b1bdbf433d609",
+  secret: "06796c5eeb54ebc5422ec7c4dd659605891b09c073fd58af4733719ee7069f60",
+  api_token: "cmVjcnVpdGVyczpKSVQ5ODc="
+}
+
+module.exports.api = {
+  protocol: "http",
+  host: "api.internal.ur-nl.com",
+  port: 6080,
+  app_id: "e809feccc0e4f16e063b4965e7f1414e088183910237059fb8572def5f1c9233",
+  secret: "2d71c17895a451bfff5e8c7a5d10e5bf9ddbdb5227d6daf45ef70710401ac3f9"
+}

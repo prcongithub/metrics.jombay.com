@@ -1,0 +1,32 @@
+<% var notice = request.flash('notice') %>
+<% var error = request.flash('error') %>
+<% var warning = request.flash('warning') %>
+<% if (typeof(error) !=='undefined' && error.length > 0){%>
+  <div class="divider2"></div>
+  <div class="alert alert-error">
+    <ul>
+      <li><%- error %></li> 
+    </ul>
+  </div>
+  <div class="divider1"></div>
+<%}%> 
+<% if(typeof(notice) !=='undefined' && notice.length > 0){%>
+  <div class="divider2"></div>
+  <div class="alert alert-success">
+    <ul>
+      <li><%- notice %></li> 
+    </ul>
+  </div>
+  <div class="divider1"></div>
+<%}%> 
+<% if(typeof(warning) !=='undefined' && warning.length > 0){%>
+  <div class="divider2"></div>
+  <div class="alert alert-warning">
+    <ul>
+      <li><%- warning %></li> 
+    </ul>
+  </div>
+  <div class="divider1"></div>
+<%}%> 
+
+
